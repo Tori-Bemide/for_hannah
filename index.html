@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hannah</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.6.0-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo"></div>
+
+        <ul class="nav-links">
+          <li class="nav-link">
+            <a href="#home">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="#affirmations">Omo</a>
+          </li>
+          <li class="nav-link">
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-link">
+            <a href="#signature"> Note</a>
+          </li>
+          <li class="nav-link">
+            <a href="#wish">Make a Wish</a>
+          </li>
+        </ul>
+
+        <div class="nav-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- Home -->
+    <section class="hero" id="home">
+      <div class="banner">
+        <h1>Happy Birthday Hannah</h1>
+      </div>
+    </section>
+    <!-- Affirmation -->
+    <section id="affirmations" class="affirmations-section">
+      <h2 class="section-title">Affirmations</h2>
+      <p class="section-subtitle">
+        A few words to remind you of who you are in God's eyes.
+      </p>
+
+      <div class="affirmations-grid">
+        <div class="affirm-card">
+          <span class="cross">✝</span>
+          <p>You are deeply loved, chosen, and carried by God.</p>
+        </div>
+
+        <div class="affirm-card">
+          <span class="cross">✝</span>
+          <p>Your kindness reflects the heart of Christ more than you know.</p>
+        </div>
+
+        <div class="affirm-card">
+          <span class="cross">✝</span>
+          <p>
+            God’s grace shines through you, you brighten every space you enter.
+          </p>
+        </div>
+
+        <div class="affirm-card">
+          <span class="cross">✝</span>
+          <p>
+            You are guided, protected, and covered. God goes before you always.
+          </p>
+        </div>
+
+        <div class="affirm-card">
+          <span class="cross">✝</span>
+          <p>Your life is a testimony of God’s faithfulness and strength.</p>
+        </div>
+
+        <div class="affirm-card">
+          <span class="cross">✝</span>
+          <p>
+            God has placed a light in you and it touches people more than you
+            realize.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section id="gallery" class="gallery-section">
+      <h2 class="gallery-title">
+        Because God really outdid Himself when He made you.
+      </h2>
+      <p class="gallery-sub">Tap on the images</p>
+
+      <div class="gallery-grid">
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-1.jpg" alt="Memory 1" />
+            </div>
+            <div class="flip-back">
+              <p>Grace in motion</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-2.jpg" alt="Memory 2" />
+            </div>
+            <div class="flip-back">
+              <p>A walking reminder of his kindness</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-3.jpg" alt="Memory 3" />
+            </div>
+            <div class="flip-back">
+              <p>A light God placed here</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-4.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>Joy that overflows</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-5.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>His goodness in your smile</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-6.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>Favored. Chosen. Loved</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-7.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>Beauty with purpose</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-8.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>Created with intention</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-9.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>A heart aligned with Him</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-10.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>Carrying His peace</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-11.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>Reflecting His love daily</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-12.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>Loved beyond measure</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-13.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>A vessel of grace</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-14.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>You shine differently</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-15.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>He goes before you</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card fade-in tap-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="./images/Image-16.jpg" alt="Memory 4" />
+            </div>
+            <div class="flip-back">
+              <p>Covered by His light</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Note -->
+    <section id="signature" class="signature-section">
+      <div class="signature-container">
+        <h2 class="signature-title">A Note From Me</h2>
+
+        <p class="signature-message">
+      Happy birthday to an incredible person with an unforgettable smile. I hope all your goals and dreams come true, and that you enjoy a life full of success and happiness. Have a fantastic day and keep shining!
+        </p>
+
+        <svg class="signature-svg" viewBox="0 0 500 150">
+          <path
+            id="signature-path"
+            d="M20 80 
+                Q 80 10, 140 60 
+                T 260 80 
+                Q 320 120, 420 40 
+                T 480 80"
+            fill="none"
+            stroke="#ff66b3"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+        </svg>
+
+        <div class="signature-name">&#128522</div>
+      </div>
+    </section>
+    <!-- Float -->
+     <section id="note" class="note-section">
+    <div class="note-card">
+        <div class="note-tape"></div>
+
+        <h3 class="note-title">A Little Note 💗</h3>
+
+        <p class="note-text">
+            May God surround you with peace, joy and strength in this new year of your life.  
+            You carry a light that blesses people without even trying. Keep shining the way He made you to shine.  
+            You're appreciated more than you know and please stop saying clog it. 
+        </p>
+    </div>
+</section>
+    <!-- Wish -->
+     <section id="wish" class="wish-section">
+    <h2 class="wish-title">Make a Wish 🎂</h2>
+
+    <button class="wish-btn" onclick="startConfetti()">
+        Tap to Celebrate ✨
+    </button>
+
+    <p id="wish-blessing" class="wish-blessing">
+        Enjoy your day.💗
+    </p>
+
+    <canvas id="confetti-canvas"></canvas>
+</section>
+  </body>
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("show");
+    }
+
+    // FADE-IN ON SCROLL
+    const fadeElements = document.querySelectorAll(".fade-in");
+
+    function revealOnScroll() {
+      fadeElements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add("visible");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+
+    // TAP TO FLIP
+    const cards = document.querySelectorAll(".tap-card");
+
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        card.classList.toggle("active");
+
+        // Close other cards when one is opened
+        cards.forEach((other) => {
+          if (other !== card) other.classList.remove("active");
+        });
+      });
+    });
+
+    function startConfetti() {
+    // Reveal blessing text
+    document.getElementById("wish-blessing").style.opacity = "1";
+
+    // Confetti setup
+    const canvas = document.getElementById('confetti-canvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const confetti = [];
+    const colors = ["#ff66b3", "#ffb3d9", "#ffffff"];
+
+    for (let i = 0; i < 120; i++) {
+        confetti.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height - canvas.height,
+            size: Math.random() * 8 + 4,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            speed: Math.random() * 3 + 2,
+            drift: Math.random() * 1 - 0.5
+        });
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        confetti.forEach(p => {
+            p.y += p.speed;
+            p.x += p.drift;
+
+            if (p.y > canvas.height) p.y = -10;
+
+            ctx.fillStyle = p.color;
+            ctx.fillRect(p.x, p.y, p.size, p.size);
+        });
+
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+}
+  </script>
+</html>

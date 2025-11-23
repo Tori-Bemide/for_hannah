@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+============================
+Fonts
+============================
+*/
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: "Great Vibes";
+  src: url(../fonts/Parisienne-Regular.ttf) format(truetype);
+}
+
+body {
+  font-family: "Montserrat";
+}
+/* 
+============================
+NavBar
+============================
+*/
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #0a0a0a;
+  padding: 15px 0;
+  box-shadow: 0 5px 15px rgba(255, 0, 157, 0.3);
+}
+
+.nav-container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* DESKTOP LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  padding: 1rem;
+  transition: 0.3s ease;
+}
+
+.nav-link a {
+  text-transform: capitalize;
+  font-size: 1.15rem;
+  font-weight: bold;
+  position: relative;
+  transition: 0.3s ease;
+  color: #ff009d;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover a {
+  color: rgba(155, 140, 149, 0.8);
+}
+
+/* MOBILE MENU TOGGLE */
+.nav-toggle {
+  color: #ff009d;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-container {
+    width: 90%;
+  }
+  .nav-links {
+    margin-top: -1rem;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: #0a0a0a;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-link:hover {
+    background: #ff009d;
+    transform: translateX(1rem);
+    -webkit-transform: translateX(1rem);
+    -moz-transform: translateX(1rem);
+    -ms-transform: translateX(1rem);
+    -o-transform: translateX(1rem);
+  }
+  .nav-link a {
+    font-size: 1.25rem;
+  }
+  .nav-link:hover a {
+    color: black;
+  }
+}
+
+/* 
+==============================
+Hero
+==============================
+ */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(255, 0, 157, 0.6), rgba(255, 0, 157, 0.6)),
+    url("../images/download\ \(1\).avif") center/cover no-repeat;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #0a0a0a;
+  font-family: "Great Vibes";
+}
+
+/* .btn {
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 1rem 1.75rem;
+  margin: 0.5rem;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1.25rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 700;
+  transition: var(--transition);
+  font-size: 1.5rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+}
+
+.banner .btn:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+} */
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 4.5rem;
+  }
+}
+
+/* 
+==============================
+Affirmation
+==============================
+ */
+.affirmations-section {
+  padding: 80px 5%;
+  background: #0a0a0a;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 38px;
+  color: #ff009d;
+  text-shadow: 0 0 12px #ff009d;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.section-subtitle {
+  color: #ffd1ef;
+  font-size: 17px;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.affirmations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARDS */
+.affirm-card {
+  background: #111;
+  border-radius: 12px;
+  padding: 25px 20px;
+  border: 1px solid rgba(255, 0, 157, 0.2);
+  color: white;
+  position: relative;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 0, 157, 0.08);
+}
+
+/* Cross icon */
+.cross {
+  font-size: 18px;
+  color: #ff66c4;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  opacity: 0.7;
+}
+
+/* Hover Glow */
+.affirm-card:hover {
+  border-color: #ff009d;
+  box-shadow: 0 0 15px #ff009d, 0 0 40px rgba(255, 0, 157, 0.5);
+  transform: translateY(-5px);
+}
+
+/* Text */
+.affirm-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffd6f5;
+}
+
+/* Small fade-in animation */
+.affirm-card {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 
+==============================
+Affirmation
+==============================
+ */
+.gallery-section {
+  padding: 80px 5%;
+  text-align: center;
+  background: linear-gradient(135deg, #ffccd5, #ffdde7);
+}
+
+.gallery-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.8rem;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.gallery-sub {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* CARD BASE */
+.flip-card {
+  width: 100%;
+  aspect-ratio: 1/1;
+  perspective: 1000px;
+  opacity: 0;
+  /*fade-instart*/
+  transform: translateY(30px);
+  /*fade-instart*/
+  transition: opacity 1s linear, transform 1s linear;
+  -webkit-transition: opacity 1s linear, transform 1s linear;
+  -moz-transition: opacity 1s linear, transform 1s linear;
+  -ms-transition: opacity 1s linear, transform 1s linear;
+  -o-transition: opacity 1s linear, transform 1s linear;
+}
+
+.flip-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* INNER ROTATION */
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+}
+
+/* Desktop hover */
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Mobile tap */
+.flip-card.active .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* FRONT + BACK */
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border: 3px solid #ff8fb3;
+}
+
+/* FRONT */
+.flip-front {
+  background: linear-gradient(rgba(255, 0, 157, 1), rgba(255, 0, 157, 1));
+}
+
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+/* BACK */
+.flip-back {
+  background: #111;
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(255, 140, 179, 0.7);
+}
+
+.flip-back p {
+  font-family: "Great Vibes";
+  color: #ff009d;
+  font-size: 1.75rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 
+==============================
+Note
+==============================
+ */
+.signature-section {
+  padding: 4rem 1.5rem;
+  background: #0a0a0a;
+  color: #fff;
+  text-align: center;
+}
+
+.signature-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* TITLE */
+.signature-title {
+  font-family: "Great Vibes", serif;
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  color: #ff009d;
+}
+
+/* MESSAGE */
+.signature-message {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  color: #eaeaea;
+}
+
+/* SIGNATURE SVG */
+.signature-svg {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* SIGNATURE ANIMATION */
+#signature-path {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: drawSignature 3.5s ease-out forwards;
+}
+
+@keyframes drawSignature {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* NAME */
+.signature-name {
+  margin-top: 1.2rem;
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: #ff009d;
+}
+
+/* 
+==============================
+Float
+==============================
+ */
+ .note-section {
+    background: #ff8fb3;
+    padding: 5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.note-card {
+    background: #0a0a0a;
+    width: 90%;
+    max-width: 450px;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(255, 105, 155, 0.35);
+    animation: floatCard 4s ease-in-out infinite;
+}
+
+/* Fake tape on top */
+.note-tape {
+    width: 120px;
+    height: 30px;
+    background: rgba(255,255,255,0.55);
+    border-radius: 4px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-4deg);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.note-title {
+    font-family: "Parisienne", cursive;
+    font-size: 2.1rem;
+    color: #ff99cc;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Note text */
+.note-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #ff99cc;
+}
+
+/* Floating animation */
+@keyframes floatCard {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+/* 
+==============================
+Wish
+==============================
+ */
+.wish-section {
+    background: #0a0a0a;
+    padding: 5rem 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.wish-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #ff99cc;
+}
+
+.wish-btn {
+    background: #ff66b3;
+    color: #0a0a0a;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgba(255, 102, 179, 0.4);
+    transition: 0.3s ease;
+}
+
+.wish-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 102, 179, 0.7);
+}
+
+#wish-blessing {
+    opacity: 0;
+    margin-top: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: #ffe6f2;
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+    transition: opacity 2s ease;
+}
+
+/* Confetti canvas */
+#confetti-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
